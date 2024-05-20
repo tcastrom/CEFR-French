@@ -1,24 +1,6 @@
 # CEFR-French-
 This repository contains a ML model to recognise the difficulty of a french text or sentence based on the CEFR benchmark. (i.e from A1 to C2)
-<style type="text/css">
-#T_f4a83 thead th {
-  background-color: grey;
-  color: black;
-  font-weight: bold;
-}
-#T_f4a83 tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
-  color: black;
-  font-weight: bold;
-}
-#T_f4a83 tbody tr:nth-child(odd) {
-  background-color: white;
-  color: black;
-  font-weight: bold;
-}
-#T_f4a83_row0_col0, #T_f4a83_row0_col1, #T_f4a83_row0_col2, #T_f4a83_row0_col3, #T_f4a83_row0_col4, #T_f4a83_row1_col0, #T_f4a83_row1_col1, #T_f4a83_row1_col2, #T_f4a83_row1_col3, #T_f4a83_row1_col4, #T_f4a83_row2_col0, #T_f4a83_row2_col1, #T_f4a83_row2_col2, #T_f4a83_row2_col3, #T_f4a83_row2_col4, #T_f4a83_row3_col0, #T_f4a83_row3_col1, #T_f4a83_row3_col2, #T_f4a83_row3_col3, #T_f4a83_row3_col4, #T_f4a83_row4_col0, #T_f4a83_row4_col1, #T_f4a83_row4_col2, #T_f4a83_row4_col3, #T_f4a83_row4_col4, #T_f4a83_row5_col0, #T_f4a83_row5_col1, #T_f4a83_row5_col2, #T_f4a83_row5_col3, #T_f4a83_row5_col4, #T_f4a83_row6_col0, #T_f4a83_row6_col1, #T_f4a83_row6_col2, #T_f4a83_row6_col3, #T_f4a83_row6_col4, #T_f4a83_row7_col0, #T_f4a83_row7_col1, #T_f4a83_row7_col2, #T_f4a83_row7_col3, #T_f4a83_row7_col4, #T_f4a83_row8_col0, #T_f4a83_row8_col1, #T_f4a83_row8_col2, #T_f4a83_row8_col3, #T_f4a83_row8_col4, #T_f4a83_row9_col0, #T_f4a83_row9_col1, #T_f4a83_row9_col2, #T_f4a83_row9_col3, #T_f4a83_row9_col4, #T_f4a83_row10_col0, #T_f4a83_row10_col1, #T_f4a83_row10_col2, #T_f4a83_row10_col3, #T_f4a83_row10_col4 {
-  text-align: center;
-}
+
 </style>
 <table id="T_f4a83">
   <caption>Model Performance Comparison</caption>
