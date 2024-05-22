@@ -2,6 +2,9 @@ import streamlit as st
 import joblib
 import requests
 from io import BytesIO
+from sklearn.linear_model import LogisticRegressionCV  # Ensure this import is here
+from sklearn.feature_extraction.text import TfidfVectorizer  # If you use it in other parts
+
 
 # Load the vectorizer and model from GitHub
 @st.cache(allow_output_mutation=True)
