@@ -10,7 +10,7 @@ We enhanced our dataset using the `textstat` package to generate additional feat
 - Liau Index
 - Polysyllable Count
 
-Furthermore, we incorporated features from the Open Lexicon online library, such as:
+Furthermore, we incorporated features from the[Open Lexicon](http://openlexicon.fr/datasets-info/Lexique382/README-Lexique.html) online library, such as:
 - Frequency of word appearance in films and books
 - Number of letters and syllables
 
@@ -41,8 +41,8 @@ CamemBERT allows tokenization of data using its special tokenizer. Utilizing `Ca
 To further improve, we created a custom model incorporating both sentences and readability metrics. Using Wandb for hyperparameter optimization, we achieved:
 - **62% accuracy**
 
-The final model, available [here](#), utilizes this approach. Recreating the model from scratch may require a paid Colab Pro account and additional credits due to the computation time (around 8 hours on a GPU A100).
+The final model, available [here](https://github.com/tcastrom/CEFR-French/tree/main/Models/CamemBERT/Models%20with%20readability%20metrics/saved%20model), utilizes this approach. Recreating the model from scratch may require a paid Colab Pro account and additional credits due to the computation time (around 8 hours on a GPU A100).
 
 ---
 
-For a detailed breakdown of all models and results, please refer to the tables below. All models and their respective results can be found [here](#).
+For a detailed breakdown of all models and results, please refer to the tables below. All models and their respective results can be found [here](https://github.com/tcastrom/CEFR-French/tree/main/Models).
