@@ -41,8 +41,8 @@ CamemBERT allows tokenization of data using its special tokenizer. Utilizing `Ca
 To further improve, we created a custom model incorporating both sentences and readability metrics. Using Wandb for hyperparameter optimization, we achieved:
 - **62% accuracy**
 
-The final model, available [here](https://github.com/tcastrom/CEFR-French/tree/main/Models/CamemBERT/Models%20with%20readability%20metrics/saved%20model), utilizes this approach. Recreating the model from scratch may require a paid Colab Pro account and additional credits due to the computation time (around 8 hours on a GPU A100).
+The final model, available [here](https://github.com/tcastrom/CEFR-French/tree/main/Models/CamemBERT/Models%20with%20readability%20metrics/saved%20model) , utilizes this approach. Recreating the model from scratch may require a paid Colab Pro account and additional credits due to the computation time (around 8 hours on a GPU A100).
 
 ---
 
-For a detailed breakdown of all models and results, please refer to the tables in the model folder [here[(https://github.com/tcastrom/CEFR-French/tree/main/Models). All models and their respective results can be found [here](https://github.com/tcastrom/CEFR-French/tree/main/Models).
+For a detailed breakdown of all models and results, please refer to the tables in the model folder [here](https://github.com/tcastrom/CEFR-French/tree/main/Models). All models and their respective results can be found [here](https://github.com/tcastrom/CEFR-French/tree/main/Models).
