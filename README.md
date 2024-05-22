@@ -1,107 +1,48 @@
-# CEFR-French-
-This repository contains a ML model to recognise the difficulty of a french text or sentence based on the CEFR benchmark. (i.e from A1 to C2)
 
-</style>
-<table id="T_f4a83">
-  <caption>Model Performance Comparison</caption>
-  <thead>
-    <tr>
-      <th class="blank level0" >&nbsp;</th>
-      <th id="T_f4a83_level0_col0" class="col_heading level0 col0" >Model</th>
-      <th id="T_f4a83_level0_col1" class="col_heading level0 col1" >Accuracy</th>
-      <th id="T_f4a83_level0_col2" class="col_heading level0 col2" >Precision</th>
-      <th id="T_f4a83_level0_col3" class="col_heading level0 col3" >Recall</th>
-      <th id="T_f4a83_level0_col4" class="col_heading level0 col4" >F1 Score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th id="T_f4a83_level0_row0" class="row_heading level0 row0" >0</th>
-      <td id="T_f4a83_row0_col0" class="data row0 col0" >Linear Regression</td>
-      <td id="T_f4a83_row0_col1" class="data row0 col1" >0.26</td>
-      <td id="T_f4a83_row0_col2" class="data row0 col2" >0.25</td>
-      <td id="T_f4a83_row0_col3" class="data row0 col3" >0.26</td>
-      <td id="T_f4a83_row0_col4" class="data row0 col4" >0.25</td>
-    </tr>
-    <tr>
-      <th id="T_f4a83_level0_row1" class="row_heading level0 row1" >1</th>
-      <td id="T_f4a83_row1_col0" class="data row1 col0" >Logistic Regression</td>
-      <td id="T_f4a83_row1_col1" class="data row1 col1" >0.47</td>
-      <td id="T_f4a83_row1_col2" class="data row1 col2" >0.47</td>
-      <td id="T_f4a83_row1_col3" class="data row1 col3" >0.47</td>
-      <td id="T_f4a83_row1_col4" class="data row1 col4" >0.47</td>
-    </tr>
-    <tr>
-      <th id="T_f4a83_level0_row2" class="row_heading level0 row2" >2</th>
-      <td id="T_f4a83_row2_col0" class="data row2 col0" >K-Nearest Neighbors</td>
-      <td id="T_f4a83_row2_col1" class="data row2 col1" >0.36</td>
-      <td id="T_f4a83_row2_col2" class="data row2 col2" >0.4</td>
-      <td id="T_f4a83_row2_col3" class="data row2 col3" >0.36</td>
-      <td id="T_f4a83_row2_col4" class="data row2 col4" >0.35</td>
-    </tr>
-    <tr>
-      <th id="T_f4a83_level0_row3" class="row_heading level0 row3" >3</th>
-      <td id="T_f4a83_row3_col0" class="data row3 col0" >Decision Tree</td>
-      <td id="T_f4a83_row3_col1" class="data row3 col1" >0.22</td>
-      <td id="T_f4a83_row3_col2" class="data row3 col2" >0.24</td>
-      <td id="T_f4a83_row3_col3" class="data row3 col3" >0.22</td>
-      <td id="T_f4a83_row3_col4" class="data row3 col4" >0.16</td>
-    </tr>
-    <tr>
-      <th id="T_f4a83_level0_row4" class="row_heading level0 row4" >4</th>
-      <td id="T_f4a83_row4_col0" class="data row4 col0" >Random Forest</td>
-      <td id="T_f4a83_row4_col1" class="data row4 col1" >0.38</td>
-      <td id="T_f4a83_row4_col2" class="data row4 col2" >0.37</td>
-      <td id="T_f4a83_row4_col3" class="data row4 col3" >0.38</td>
-      <td id="T_f4a83_row4_col4" class="data row4 col4" >0.34</td>
-    </tr>
-    <tr>
-      <th id="T_f4a83_level0_row5" class="row_heading level0 row5" >5</th>
-      <td id="T_f4a83_row5_col0" class="data row5 col0" >Support Vector Machine</td>
-      <td id="T_f4a83_row5_col1" class="data row5 col1" >0.48</td>
-      <td id="T_f4a83_row5_col2" class="data row5 col2" >0.48</td>
-      <td id="T_f4a83_row5_col3" class="data row5 col3" >0.48</td>
-      <td id="T_f4a83_row5_col4" class="data row5 col4" >0.48</td>
-    </tr>
-    <tr>
-      <th id="T_f4a83_level0_row6" class="row_heading level0 row6" >6</th>
-      <td id="T_f4a83_row6_col0" class="data row6 col0" >Naive Bayes</td>
-      <td id="T_f4a83_row6_col1" class="data row6 col1" >0.45</td>
-      <td id="T_f4a83_row6_col2" class="data row6 col2" >0.47</td>
-      <td id="T_f4a83_row6_col3" class="data row6 col3" >0.45</td>
-      <td id="T_f4a83_row6_col4" class="data row6 col4" >0.45</td>
-    </tr>
-    <tr>
-      <th id="T_f4a83_level0_row7" class="row_heading level0 row7" >7</th>
-      <td id="T_f4a83_row7_col0" class="data row7 col0" >Stochastic Gradient Descent</td>
-      <td id="T_f4a83_row7_col1" class="data row7 col1" >0.46</td>
-      <td id="T_f4a83_row7_col2" class="data row7 col2" >0.46</td>
-      <td id="T_f4a83_row7_col3" class="data row7 col3" >0.46</td>
-      <td id="T_f4a83_row7_col4" class="data row7 col4" >0.45</td>
-    </tr>
-    <tr>
-      <th id="T_f4a83_level0_row8" class="row_heading level0 row8" >8</th>
-      <td id="T_f4a83_row8_col0" class="data row8 col0" >Gradient Boosting</td>
-      <td id="T_f4a83_row8_col1" class="data row8 col1" >0.44</td>
-      <td id="T_f4a83_row8_col2" class="data row8 col2" >0.44</td>
-      <td id="T_f4a83_row8_col3" class="data row8 col3" >0.44</td>
-      <td id="T_f4a83_row8_col4" class="data row8 col4" >0.43</td>
-    </tr>
-    <tr>
-      <th id="T_f4a83_level0_row9" class="row_heading level0 row9" >9</th>
-      <td id="T_f4a83_row9_col0" class="data row9 col0" >AdaBoost</td>
-      <td id="T_f4a83_row9_col1" class="data row9 col1" >0.35</td>
-      <td id="T_f4a83_row9_col2" class="data row9 col2" >0.36</td>
-      <td id="T_f4a83_row9_col3" class="data row9 col3" >0.35</td>
-      <td id="T_f4a83_row9_col4" class="data row9 col4" >0.35</td>
-    </tr>
-    <tr>
-      <th id="T_f4a83_level0_row10" class="row_heading level0 row10" >10</th>
-      <td id="T_f4a83_row10_col0" class="data row10 col0" >Quadratic Discriminant Analysis</td>
-      <td id="T_f4a83_row10_col1" class="data row10 col1" >0.17</td>
-      <td id="T_f4a83_row10_col2" class="data row10 col2" >0.2</td>
-      <td id="T_f4a83_row10_col3" class="data row10 col3" >0.17</td>
-      <td id="T_f4a83_row10_col4" class="data row10 col4" >0.15</td>
-    </tr>
-  </tbody>
-</table>
+## Overview
+
+This Kaggle contest involves a dataset of 4,200 sentences with their respective difficulty labels. Additionally, we were provided with 1,200 unlabeled sentences for the contest submission.
+
+### Data and Features
+
+We enhanced our dataset using the `textstat` package to generate additional features. Specifically, we utilized the VIF (Variance Inflation Factor) to select the three least correlated measures due to the high correlation among indicators in `textstat`. The selected features are:
+- Flesch Reading Ease Index
+- Liau Index
+- Polysyllable Count
+
+Furthermore, we incorporated features from the Open Lexicon online library, such as:
+- Frequency of word appearance in films and books
+- Number of letters and syllables
+
+These additional features were averaged per sentence to improve our model, as they provide quantitative data not captured by IT-DF or CamemBERT tokenization.
+
+### Initial Models
+
+We started with basic classification models, including logistic regression and KNN. Initially, we used only the sentences tokenized using TF-IDF, which measures word importance within a document and adjusts for general frequency. However, these models performed poorly:
+- **Best accuracy:** 48% on 480 randomly chosen labeled sentences
+- **Kaggle contest accuracy:** 45%
+
+The poor performance is attributed to the models relying solely on word frequency, making it difficult to distinguish between similar difficulty levels. Specifically, the A2 class had less than 36% accuracy due to nuances between A2, A1, and B1 levels.
+
+### Improved Models
+
+To address these shortcomings, we integrated readability metrics and quantitative word information. While models using only these metrics were competitive with TF-IDF-based models, the best accuracy achieved was 43%.
+
+Combining both approaches yielded better results:
+- **Combined model accuracy:** 50% on the 480 testing sentences
+
+### CamemBERT Implementation
+
+Our initial models struggled to encapsulate word meanings and sentence structures. To overcome this, we used text embeddings with CamemBERT, a model trained on 138 GB of data, significantly more than our initial models.
+
+CamemBERT allows tokenization of data using its special tokenizer. Utilizing `CamembertForSequenceClassification`, we trained a model to classify the difficulty of French sentences. Using Optuna for hyperparameter tuning, we achieved:
+- **58% accuracy** on the Kaggle contest
+
+To further improve, we created a custom model incorporating both sentences and readability metrics. Using Wandb for hyperparameter optimization, we achieved:
+- **62% accuracy**
+
+The final model, available [here](#), utilizes this approach. Recreating the model from scratch may require a paid Colab Pro account and additional credits due to the computation time (around 8 hours on a GPU A100).
+
+---
+
+For a detailed breakdown of all models and results, please refer to the tables below. All models and their respective results can be found [here](#).
