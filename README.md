@@ -4,6 +4,9 @@
 
 This Kaggle contest involves a dataset of 4,200 sentences with their respective difficulty labels. Additionally, we were provided with 1,200 unlabeled sentences for the contest submission.
 
+### Model's Presentation
+## Video Presentation
+[![Watch the video](https://img.youtube.com/vi/f1B7x2-sDzg/0.jpg)](https://youtu.be/f1B7x2-sDzg)
 ### Data and Features
 
 We enhanced our dataset using the `textstat` package to generate additional features. Specifically, we utilized the VIF (Variance Inflation Factor) to select the three least correlated measures due to the high correlation among indicators in `textstat`. The selected features are:
