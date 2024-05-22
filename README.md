@@ -45,4 +45,4 @@ The final model, available [here](https://github.com/tcastrom/CEFR-French/tree/m
 
 ---
 
-For a detailed breakdown of all models and results, please refer to the tables below. All models and their respective results can be found [here](https://github.com/tcastrom/CEFR-French/tree/main/Models).
+For a detailed breakdown of all models and results, please refer to the tables in the model folder [here[(https://github.com/tcastrom/CEFR-French/tree/main/Models). All models and their respective results can be found [here](https://github.com/tcastrom/CEFR-French/tree/main/Models).
