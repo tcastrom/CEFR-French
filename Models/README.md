@@ -105,6 +105,10 @@
   </tbody>
 </table>
 
+Confusion Matrix for the logistic regression using only TD-IF. 0 = A1, 1 = A2, ..., 5 = C2
+![image](https://github.com/tcastrom/CEFR-French/assets/140407074/b750ae34-b14f-49e6-a85a-0c16b3fc306b)
+
+
 
 
 
