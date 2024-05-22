@@ -228,3 +228,35 @@ Confusion Matrix for the logistic regression using only TD-IF. 0 = A1, 1 = A2, .
     </tr>
   </tbody>
 </table>
+
+# CamemBERT Model Usage Guide
+
+To use the CamemBERT model, follow these steps:
+
+1. **Download the model folder:**
+   Download the folder `Models/CamemBERT/Models with readability metrics/saved model`.
+
+2. **Integrate the model into your code:**
+
+```python
+# Predictions on the unlabelled data
+
+# Load the trained model
+from transformers import CamembertForSequenceClassification, CamembertTokenizer, pipeline
+
+model = CamembertForSequenceClassification.from_pretrained('./saved_models/CamemBERT_V1')
+tokenizer = CamembertTokenizer.from_pretrained('./saved_models/CamemBERT_V1')
+
+# Define the label names in the order of their corresponding indices (0 to 5)
+label_names = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+
+# Create a pipeline for text classification
+nlp = pipeline("text-classification", model=model, tokenizer=tokenizer, return_all_scores=True)
+
+# Predict
+outputs = nlp("Je mange une pomme.")
+
+# Decode the predictions
+predictions = [{label_names[i]: score for i, score in enumerate(output)} for output in outputs]
+print(predictions)
+
