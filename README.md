@@ -8,6 +8,7 @@ This Kaggle contest involves a dataset of 4,200 sentences with their respective 
 ### Model's Presentation
 ## Video Presentation
 [![Watch the video](https://img.youtube.com/vi/f1B7x2-sDzg/0.jpg)](https://youtu.be/f1B7x2-sDzg)
+
 ### Data and Features
 
 We enhanced our dataset using the `textstat` package to generate additional features. Specifically, we utilized the VIF (Variance Inflation Factor) to select the three least correlated measures due to the high correlation among indicators in `textstat`. The selected features are:
@@ -58,6 +59,9 @@ For a detailed breakdown of all models and results, please refer to the tables i
 ## Overview
 
 The **EPFL to Paris Journey** is an interactive game designed to help international students at EPFL improve their French language skills. The objective of the game is to write complex sentences in French within a set time limit to "travel" from EPFL in Lausanne to the Eiffel Tower in Paris. The game makes learning French fun and engaging, motivating students to put forth their best effort.
+
+## Video Presentation
+[![Watch the video](https://img.youtube.com/vi/GRkDAG-6Ers/0.jpg)](https://youtu.be/GRkDAG-6Ers))
 
 ### CEFR Levels
 
@@ -126,4 +130,4 @@ In addition to the gameplay, the "Review and Learn" page provides valuable learn
 4. Track your progress and aim to reach the Eiffel Tower by scoring 517 points.
 5. Review your submitted sentences and learn from the "Review and Learn" page.
 
-## Game Presentation
+
