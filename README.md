@@ -124,10 +124,11 @@ In addition to the gameplay, the "Review and Learn" page provides valuable learn
 
 ## How to Play
 
-1. Navigate to the "Game" page.
-2. Press the "Start the game!" button.
-3. Write and submit as many complex French sentences as you can within 90 seconds.
-4. Track your progress and aim to reach the Eiffel Tower by scoring 517 points.
-5. Review your submitted sentences and learn from the "Review and Learn" page.
+1. Click on the following link: https://guillaum21-mynewapp-kagglegame4-i6bxfm.streamlit.app/
+2. Navigate to the "Game" page.
+3. Press the "Start the game!" button.
+4. Write and submit as many complex French sentences as you can within 90 seconds.
+5. Track your progress and aim to reach the Eiffel Tower by scoring 517 points.
+6. Review your submitted sentences and learn from the "Review and Learn" page.
 
 
