@@ -51,3 +51,79 @@ The final model, available [here](https://github.com/tcastrom/CEFR-French/tree/m
 ---
 
 For a detailed breakdown of all models and results, please refer to the tables in the model folder [here](https://github.com/tcastrom/CEFR-French/tree/main/Models). All models and their respective results can be found [here](https://github.com/tcastrom/CEFR-French/tree/main/Models).
+
+
+# An interesting application of our model: EPFL to Paris Journey Game
+
+## Overview
+
+The **EPFL to Paris Journey** is an interactive game designed to help international students at EPFL improve their French language skills. The objective of the game is to write complex sentences in French within a set time limit to "travel" from EPFL in Lausanne to the Eiffel Tower in Paris. The game makes learning French fun and engaging, motivating students to put forth their best effort.
+
+### CEFR Levels
+
+The **Common European Framework of Reference for Languages (CEFR)** is an international standard for describing language proficiency. It consists of six levels:
+- **A1 (Beginner)**
+- **A2 (Elementary)**
+- **B1 (Intermediate)**
+- **B2 (Upper Intermediate)**
+- **C1 (Advanced)**
+- **C2 (Proficient)**
+
+Each level is designed to assess a learner's ability to perform various linguistic tasks. The levels are widely recognized and provide a clear benchmark for language proficiency. For more details on how CEFR levels are used in our models, refer to the [Initial Models](#initial-models) and [Improved Models](#improved-models) sections.
+
+## How the Game Works
+
+### Gameplay
+
+1. **Starting the Game**: The game begins when the player presses the "Start the game!" button. They then have **90 seconds** to write as many complex French sentences as possible.
+2. **Writing Sentences**: Players type their sentences into the provided text input field.
+3. **Submitting Sentences**: After typing a sentence, players press the "Submit Sentence" button. The game then analyzes the sentence's complexity and assigns it a CEFR level using techniques similar to those described in the [CamemBERT Implementation](#camembert-implementation) section.
+4. **Scoring**: Points are awarded based on the CEFR level of the sentence:
+   - **A1**: 5 points
+   - **A2**: 10 points
+   - **B1**: 20 points
+   - **B2**: 30 points
+   - **C1**: 40 points
+   - **C2**: 50 points
+
+### Progress Tracking
+
+- **Distance Calculation**: The total distance from EPFL to the Eiffel Tower is **517 kilometers**. Each point earned corresponds to 1 kilometer traveled.
+- **Encouragement Messages**: The game provides motivational messages based on the player's progress:
+  - Less than 100 kilometers: "**Keep going! You can do it!**"
+  - 100 to 250 kilometers: "**Great job! You're halfway there!**"
+  - 250 to 400 kilometers: "**You're making great progress! Almost there!**"
+  - More than 400 kilometers: "**Just a little more! The Eiffel Tower is in sight!**"
+
+## Why the Game is Interesting
+
+### Educational Value
+
+The game leverages the CEFR framework to provide a structured and standardized approach to language learning. By focusing on sentence complexity, it encourages players to think critically about their language use, promoting deeper learning. This aligns with our goal of improving model accuracy by integrating readability metrics and quantitative word information as discussed in the [Improved Models](#improved-models) section.
+
+### Engagement
+
+Gamifying the learning process keeps players motivated and engaged. The clear objectives and rewards system help maintain interest and encourage consistent practice, which is crucial for language acquisition. This approach is similar to how we enhanced our dataset using the `textstat` package and features from the [Open Lexicon](#data-and-features).
+
+### Target Audience
+
+This game is ideal for:
+- **International Students**: Specifically designed for non-native French speakers studying at EPFL.
+- **French Learners**: Anyone looking to improve their French proficiency through an interactive and enjoyable method.
+- **Language Instructors**: Teachers can use the game as a supplementary tool to engage students and track their progress.
+
+## Review and Learn
+
+In addition to the gameplay, the "Review and Learn" page provides valuable learning opportunities:
+- **Sentence History**: Players can review all the sentences they've submitted along with the points and CEFR levels assigned to each.
+- **Common Phrases**: The page also includes the ten most frequently used sentences in Paris, helping players learn practical phrases they can use in real-life situations.
+
+## How to Play
+
+1. Navigate to the "Game" page.
+2. Press the "Start the game!" button.
+3. Write and submit as many complex French sentences as you can within 90 seconds.
+4. Track your progress and aim to reach the Eiffel Tower by scoring 517 points.
+5. Review your submitted sentences and learn from the "Review and Learn" page.
+
+## Game Presentation
